@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale=1.0">
+    <meta http-equiv = "X-UA-Compatible" content ="ie-edge">
+    <!--Bootstrap-->
+    <link rel = "stylesheet"href ="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT
+    cross origin= "anonymous">
+    <!--Vue-->
+    <script src = "https://cdn.jsdelivr.net/npm/vue/dist(vue.js)"></script>
+    <title> Guidal | Turismo por Colombia </title>
+</head>
+
+<body>
+
+    <div id = "app">
+        <div class = "app-container">
+            <h1>Inicia sesion</h1>
+            <p>username:</p>
+            <input v-model = "nombreDeUsuario">
+            <span v-if='errorMessage' class="error-message">{{errorMessage}}</span>
+            <button v-on: click = "login(nombreDeUsuario)">Log in</button>
+        </div>
+    </div>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                nombreDeUsuario: '',
+                errorMessage: ''
+            },
+            methods: {
+                login: function(usuario) {
+                    this.errorMessage = '';
+                    if(tarea.trim()) {
+
+                    } else this.errorMessage = 'favor introducir un usuario valido';
+                }
+            }
+        })
+    </script>
+</body>
+
+<style>
+    html {
+        width: 100%;
+        height: 100%;
+        user-select: none;
+    }
+    body {
+        display: flex;
+        flex:1;
+        justify-content:right;
+        align-items: center;
+        height: 100%;
+        background: teal;
+        user-select: none;
+    }
+    html body .app-container{
+        display: flex;
+        flex:1;
+        justify-content: right;
+        align-items: center;
+        height: 100%;
+        flex-direction: row;
+        user-select: none;
+        color: seashell;
+    }
+    h1 {
+        color: rgb(200, 235, 143);
+        font-size: 80px;
+        margin:15vh 0;
+        font-weight: 700;
+    }
+</style>
+<!--I'm missing p, button, errorMessage-->
