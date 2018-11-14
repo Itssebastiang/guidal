@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale=1.0">
+    <meta http-equiv = "X-UA-Compatible" content ="ie-edge">
+    <!--Bootstrap-->
+    <link rel = "stylesheet"href ="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    cross origin= "anonymous">
+    <!--Vue-->
+    <script src = "https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <title> Guidal | Landing Page </title>
+</head>
+
+<body>
+    <div id = "app">
+        <div class = "app-container">
+            <h1>Guidal</h1>
+            <h2>Welcome, {{user}}</h2>
+            <h3>Please select what you wish to do</h3>
+            <button v-on: click = "Tourist"> Tourist</button>
+            <button v-on: click = "Guide"> Guide</button>
+        </div>
+    </div>
+</body>
