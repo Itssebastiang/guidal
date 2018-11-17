@@ -9,36 +9,36 @@
     cross origin= "anonymous">
     <!--Vue-->
     <script src = "https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
-    <title> Guidal | Landing Page </title>
+    <title> Guidal | Tourist </title>
 </head>
-
 <body>
     <div id = "app">
         <div class = "app-container">
             <img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20logo.png" style= "width:60%;height:40%;">
-            <h2>Welcome, {{user}}</h2>
-            <h3>Please select what you wish to do</h3>
-            <button v-on: click = "Guide()" style="display:inline-block"> <img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20map.png" style= "float: center; width: 25%;height:25%;"> Guide</button>
-            <form class="modal-content animate" action="Tourist.html">
-                      <button v-on: click = "Tourist()" style="display:inline-block"> <img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20plane.png" style= "float: center; width: 25%;height:25%;"> Tourist</button>
-                    </div>
+            <h2>Welcome to the tourist place where you'll find all the Hidden Gems registered on this website</h2>
+            <ul>
+                <li v-for="Hidden Gem in hiddenGems">
+                    <div class="hidden-gem"> {{Hidden Gem}} </div> 
+                </li>
+            </ul>      
         </div>
     </div>
+    <div id = "app">
+            <img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20logo.png" style= "width:60%;height:40%;">
+            <h2>Welcome to the tourist place where you'll find all the Hidden Gems registered on this website</h2>
+            <ul>
+                <li v-for="Hidden Gem in hiddenGems">
+                    <div class="hidden-gem"> {{HiddenGem}} </div> 
+                </li>
+            </ul>
+            </div>
+        </div>
     <script>
         var app = new Vue({
-            el: '#app',
-            methods: {
-                Tourist: function() {
-                    
-                },
-                Guide: function() {
-                    
-                }
-            }
+            el: "#app"
         })
     </script>
 </body>
-
 <style>
     html {
         width: 100%;
@@ -65,33 +65,14 @@
         user-select: none;
         color: seashell;
     }
-    h1 {
-        color: rgb(200, 235, 143);
-        
-        float: left;
-        font-size: 80px;
-        margin:4vh 0;
-        font-weight: 700;
-    }
     h2 {
         color: seashell;
         font-size: 20px;
         margin-bottom: 20px;
     }
-    p {
-        margin: 10px;
-    }
-    button {
-        display: flex;
-        flex: top;
-        justify-content: center;
-        border: 0;
-        background: transparent;
-        border: 2px rgb(200, 235, 143) solid;
-        color: white;
-        border-radius: 4px;
-        padding: 8px;
-        vertical-align: center;
-        margin-top: 20px;
+    ul {
+        color: seashell;
+        font-size: 20px;
+        margin-bottom: 20px;
     }
 </style>
