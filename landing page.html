@@ -18,8 +18,8 @@
             <img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20logo.png" style= "width:60%;height:40%;">
             <h2>Welcome, {{user}}</h2>
             <h3>Please select what you wish to do</h3>
-            <button v-on: click = "Tourist()"> Tourist</button>
-            <button v-on: click = "Guide()"> Guide</button>
+            <button v-on: click = "Tourist()" style="display:inline-block"> <img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20plane.png" style= "float: center; width: 25%;height:25%;"> Tourist</button>
+            <button v-on: click = "Guide()" style="display:inline-block"> <img src= "https://raw.githubusercontent .com/Itssebastiang/guidal/master/Guidal%20map.png" style= "float: center; width: 25%;height:25%;"> Guide</button>
         </div>
     </div>
     <script>
@@ -72,7 +72,7 @@
         font-weight: 700;
     }
     h2 {
-        color: cyan;
+        color: seashell;
         font-size: 20px;
         margin-bottom: 20px;
     }
@@ -81,6 +81,7 @@
     }
     button {
         display: flex;
+        flex: top;
         justify-content: center;
         border: 0;
         background: transparent;
