@@ -15,23 +15,80 @@
 <body>
     <div id = "app">
         <div class = "app-container">
-            <h1>Guidal</h1>
+            <img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20logo.png" style= "width:60%;height:40%;">
             <h2>Welcome, {{user}}</h2>
             <h3>Please select what you wish to do</h3>
-            <button v-on: click = "Tourist"> Tourist</button>
-            <button v-on: click = "Guide"> Guide</button>
+            <button v-on: click = "Tourist()"> Tourist</button>
+            <button v-on: click = "Guide()"> Guide</button>
         </div>
     </div>
     <script>
         var app = new Vue({
             el: '#app',
             methods: {
-                Tourist: function {
-                    <!--Aqui va la pagina de turistas, es un mapa (mapbox) con opciones de búsqueda-->
-                }
-                Guide: function {
-                    <!--Aqui va la pagina de guias, es una tabla que muestra las requests que hay en la base de datos basado en una zona, no necesariamente mapa-->
+                Tourist: function() {
+                    
+                },
+                Guide: function() {
+                    
                 }
             }
         })
+    </script>
 </body>
+
+<style>
+    html {
+        width: 100%;
+        height: 100%;
+        user-select: none;
+    }
+    body {
+        display: flex;
+        flex:1;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background: teal;
+        user-select: none;
+        font-family: 'Consoles';
+    }
+    html body .app-container{
+        display: flex;
+        flex:1;
+        justify-content: center;
+        align-items:center;
+        height: 100%;
+        flex-direction: column;
+        user-select: none;
+        color: seashell;
+    }
+    h1 {
+        color: rgb(200, 235, 143);
+        
+        float: left;
+        font-size: 80px;
+        margin:4vh 0;
+        font-weight: 700;
+    }
+    h2 {
+        color: cyan;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    p {
+        margin: 10px;
+    }
+    button {
+        display: flex;
+        justify-content: center;
+        border: 0;
+        background: transparent;
+        border: 2px rgb(200, 235, 143) solid;
+        color: white;
+        border-radius: 4px;
+        padding: 8px;
+        vertical-align: center;
+        margin-top: 20px;
+    }
+</style>
