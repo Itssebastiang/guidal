@@ -9,28 +9,19 @@
     cross origin= "anonymous">
     <!--Vue-->
     <script src = "https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
-    <title> Guidal | Tourist </title>
+    <title> Guidal | Citizen </title>
 </head>
 <body>
     <div id = "app">
             <img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20logo.png" style= "width:60%;height:40%;">
-            <h2>Welcome to the tourist place where you'll find all the Hidden Gems registered on this website</h2>
-            <ul>
-                <li v-for="HiddenGem in hiddenGems">
-                    <div class="hidden-gem">{{HiddenGem}}</div> 
-                </li>
-            </ul>
+            <h2>Welcome to the Citizen place where you'll be able to register yourself and your Hidden Gem</h2>
+            <img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/GuidalCanvas.png" style= "width:80%;height:80%;">
+            
             </div>
         </div>
     <script>
         var app = new Vue({
             el: '#app',
-
-            data: {
-                hiddenGems:[
-                    'Mompox',
-                ],
-            },
 
             methods: {
                 Tourist: function() {

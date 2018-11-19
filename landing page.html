@@ -18,10 +18,12 @@
             <img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20logo.png" style= "width:60%;height:40%;">
             <h2>Welcome, {{user}}</h2>
             <h3>Please select what you wish to do</h3>
-            <button v-on: click = "Guide()" style="display:inline-block"> <img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20map.png" style= "float: center; width: 25%;height:25%;"> Guide</button>
+            <form class="modal-content animate" action="Guide.html">
+                    <button v-on: click = "Guide()" style="display:inline-block"> <img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20map.png" style= "float: center; width: 25%;height:25%;"> Citizen</button>
+            </form>
             <form class="modal-content animate" action="Tourist.html">
-                      <button v-on: click = "Tourist()" style="display:inline-block"> <img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20plane.png" style= "float: center; width: 25%;height:25%;"> Tourist</button>
-                    </div>
+                <button v-on: click = "Tourist()" style="display:inline-block"> <img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20plane.png" style= "float: center; width: 25%;height:25%;"> Tourist</button>
+            </form>
         </div>
     </div>
     <script>
