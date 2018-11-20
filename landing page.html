@@ -18,12 +18,11 @@
             <img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20logo.png" style= "width:60%;height:40%;">
             <h2>Welcome, {{user}}</h2>
             <h3>Please select what you wish to do</h3>
-            <form class="modal-content animate" action="Guide.html">
-                    <button v-on: click = "Guide()" style="display:inline-block"> <img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20map.png" style= "float: center; width: 25%;height:25%;"> Citizen</button>
-            </form>
-            <form class="modal-content animate" action="Tourist.html">
-                <button v-on: click = "Tourist()" style="display:inline-block"> <img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20plane.png" style= "float: center; width: 25%;height:25%;"> Tourist</button>
-            </form>
+            <div id="button"><button> <a href="Tourist.html"><img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20plane.png" style= "float: center; width: 25%;height:25%;">Tourist</a></button></div>
+            <!--<form class="modal-content animate" action="Guide.html">-->
+                    <!--<button v-on: click = "Guide()" style="display:inline-block"> <img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20map.png" style= "float: center; width: 5%;height:5%;"> Citizen</button>-->
+            <!--</form>-->
+            <div id="button"><button> <a href="Guide.html"><img src= "https://raw.githubusercontent.com/Itssebastiang/guidal/master/Guidal%20map.png" style= "float: center; width: 25%;height:25%;">Citizen</a></button></div>
         </div>
     </div>
     <script>
@@ -31,10 +30,8 @@
             el: '#app',
             methods: {
                 Tourist: function() {
-                    
                 },
                 Guide: function() {
-                    
                 }
             }
         })
